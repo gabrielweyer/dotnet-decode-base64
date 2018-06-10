@@ -67,8 +67,23 @@ Task("Build")
         DotNetCoreBuild(solutionPath, settings);
     });
 
-Task("Pack")
+Task("Test")
     .IsDependentOn("Build")
+    .Does(() =>
+    {
+        var settings = new DotNetCoreTestSettings
+        {
+            Configuration = configuration,
+            NoBuild = true
+        };
+
+        GetFiles("./tests/*/*-tests.csproj")
+            .ToList()
+            .ForEach(f => DotNetCoreTest(f.FullPath, settings));
+    });
+
+Task("Pack")
+    .IsDependentOn("Test")
     .WithCriteria(() => HasArgument("pack"))
     .Does(() =>
     {

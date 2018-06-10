@@ -1,13 +1,13 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp2.1</TargetFramework>
-    <RootNamespace>DotNetDecodeBase64</RootNamespace>
+    <RootNamespace>DotNet.DecodeBase64</RootNamespace>
     <PackAsTool>true</PackAsTool>
     <PackageId>dotnet-decode-base64</PackageId>
     <Authors>Gabriel Weyer</Authors>
     <PackageDescription>Decode a UTF8 base64 encoded string.</PackageDescription>
-    <PackageTags>Base64;UTF8</PackageTags>
+    <PackageTags>Base64;Base64Url;UTF8</PackageTags>
     <PackageProjectUrl>https://github.com/gabrielweyer/dotnet-decode-base64</PackageProjectUrl>
     <Copyright>Copyright © Decode Base64 contributors</Copyright>
   </PropertyGroup>

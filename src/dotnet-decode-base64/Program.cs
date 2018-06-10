@@ -1,7 +1,6 @@
 ﻿using System;
-using System.Text;
 
-namespace DotNetDecodeBase64
+namespace DotNet.DecodeBase64
 {
     class Program
     {
@@ -10,16 +9,15 @@ namespace DotNetDecodeBase64
             if (args.Length != 1)
             {
                 Console.WriteLine("A single argument should be provided:");
-                Console.WriteLine("dotnet decode-base64 \"SGVsbG8gV29ybGQh\"");
+                Console.WriteLine("dotnet decode-base64 SGVsbG8gV29ybGQh");
                 return;
             }
 
             try
             {
-                var data = Convert.FromBase64String(args[0]);
-                var decodedString = Encoding.UTF8.GetString(data);
+                var decodedString = Base64Decoder.Decode(args[0]);
 
-                Console.ForegroundColor = ConsoleColor.DarkGray;
+                Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("Decoded string:");
                 Console.ResetColor();
                 Console.WriteLine(decodedString);

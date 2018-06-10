@@ -7,6 +7,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{0B10700B-C9C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotnet-decode-base64", "src\dotnet-decode-base64\dotnet-decode-base64.csproj", "{78F9E63A-7E22-44E7-8D50-2BCED9562E91}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{4EC166CF-1531-4931-ABF1-7B07E7A79CAA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotnet-decode-base64-tests", "tests\dotnet-decode-base64-tests\dotnet-decode-base64-tests.csproj", "{5F5C4029-BADC-41C0-89FA-5D42FBECEE67}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,8 +36,21 @@ Global
 		{78F9E63A-7E22-44E7-8D50-2BCED9562E91}.Release|x64.Build.0 = Release|Any CPU
 		{78F9E63A-7E22-44E7-8D50-2BCED9562E91}.Release|x86.ActiveCfg = Release|Any CPU
 		{78F9E63A-7E22-44E7-8D50-2BCED9562E91}.Release|x86.Build.0 = Release|Any CPU
+		{5F5C4029-BADC-41C0-89FA-5D42FBECEE67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F5C4029-BADC-41C0-89FA-5D42FBECEE67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F5C4029-BADC-41C0-89FA-5D42FBECEE67}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{5F5C4029-BADC-41C0-89FA-5D42FBECEE67}.Debug|x64.Build.0 = Debug|Any CPU
+		{5F5C4029-BADC-41C0-89FA-5D42FBECEE67}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{5F5C4029-BADC-41C0-89FA-5D42FBECEE67}.Debug|x86.Build.0 = Debug|Any CPU
+		{5F5C4029-BADC-41C0-89FA-5D42FBECEE67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F5C4029-BADC-41C0-89FA-5D42FBECEE67}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F5C4029-BADC-41C0-89FA-5D42FBECEE67}.Release|x64.ActiveCfg = Release|Any CPU
+		{5F5C4029-BADC-41C0-89FA-5D42FBECEE67}.Release|x64.Build.0 = Release|Any CPU
+		{5F5C4029-BADC-41C0-89FA-5D42FBECEE67}.Release|x86.ActiveCfg = Release|Any CPU
+		{5F5C4029-BADC-41C0-89FA-5D42FBECEE67}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{78F9E63A-7E22-44E7-8D50-2BCED9562E91} = {0B10700B-C9C2-478E-925C-B9655D029D99}
+		{5F5C4029-BADC-41C0-89FA-5D42FBECEE67} = {4EC166CF-1531-4931-ABF1-7B07E7A79CAA}
 	EndGlobalSection
 EndGlobal
