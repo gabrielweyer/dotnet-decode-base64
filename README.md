@@ -12,10 +12,17 @@
 
 Supports both [base64][base64] and [base64url][base64url].
 
-## Invoke the global tool
+![Sample output](docs/sample-output.png)
+
+## Installation
 
 ```posh
 dotnet tool install -g dotnet-decode-base64
+```
+
+## Usage
+
+```posh
 dotnet decode-base64 SGVsbG8gV29ybGQh
 ```
 
@@ -26,6 +33,5 @@ dotnet decode-base64 SGVsbG8gV29ybGQh
 [app-veyor]: https://ci.appveyor.com/project/GabrielWeyer/dotnet-decode-base64
 [app-veyor-shield]: https://img.shields.io/appveyor/ci/gabrielweyer/dotnet-decode-base64/master.svg?label=appveyor&style=flat-square
 [dotnet-global-tools]: https://docs.microsoft.com/en-us/dotnet/core/tools/global-tools
-
 [base64]: https://tools.ietf.org/html/rfc4648#section-4
 [base64url]: https://tools.ietf.org/html/rfc4648#section-5
