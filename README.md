@@ -2,9 +2,9 @@
 
 `.NET Core` [global tool][dotnet-global-tools] to decode a `UTF8` `Base64` encoded string.
 
-| Package | Release | Pre-release |
-| --- | --- | --- |
-| `dotnet-decode-base64` | [![NuGet][nuget-tool-badge]][nuget-tool-command] | [![MyGet][myget-tool-badge]][myget-tool-command] |
+| Package | Release |
+| - | - |
+| `dotnet-decode-base64` | [![NuGet][nuget-tool-badge]][nuget-tool-command] |
 
 | CI | Status | Platform(s) | Framework(s) |
 | --- | --- | --- | --- |
@@ -16,19 +16,17 @@ Supports both [base64][base64] and [base64url][base64url].
 
 ## Installation
 
-```posh
+```powershell
 dotnet tool install -g dotnet-decode-base64
 ```
 
 ## Usage
 
-```posh
+```powershell
 dotnet decode-base64 SGVsbG8gV29ybGQh
 ```
 
 [nuget-tool-badge]: https://img.shields.io/nuget/v/dotnet-decode-base64.svg?label=NuGet&style=flat-square
-[nuget-tool-command]: https://www.nuget.org/packages/dotnet-decode-base64
-[myget-tool-badge]: https://img.shields.io/myget/gabrielweyer-pre-release/v/dotnet-decode-base64.svg?label=MyGet&style=flat-square
 [myget-tool-command]: https://www.myget.org/feed/gabrielweyer-pre-release/package/nuget/dotnet-decode-base64
 [app-veyor]: https://ci.appveyor.com/project/GabrielWeyer/dotnet-decode-base64
 [app-veyor-shield]: https://img.shields.io/appveyor/ci/gabrielweyer/dotnet-decode-base64/master.svg?label=appveyor&style=flat-square
