@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <TargetFrameworks>netcoreapp3.1;netcoreapp2.1</TargetFrameworks>
     <RootNamespace>DotNet.DecodeBase64</RootNamespace>
     <PackAsTool>true</PackAsTool>
     <PackageId>dotnet-decode-base64</PackageId>
