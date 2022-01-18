@@ -64,8 +64,6 @@ for:
       artifact: packages
       draft: false
       prerelease: false
-      on:
-        branch: main
     - provider: NuGet
       server: https://www.nuget.org/api/v2/package
       api_key:
@@ -73,7 +71,5 @@ for:
         # https://www.appveyor.com/docs/deployment/nuget/#provider-settings
         secure: WolEhj3GzTSN8Jf9DD6gLD7hfsfvNPSlOJtHjINgQ+y4TjfGVi2BSJbtCbR/4puG
       skip_symbols: false
-      symbol_server: https://nuget.smbsrc.net/
+      symbol_server: https://www.nuget.org/api/v2/symbolpackage
       artifact: packages
-      on:
-        branch: main
