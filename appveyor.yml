@@ -64,8 +64,6 @@ for:
       artifact: packages
       draft: false
       prerelease: false
-      on:
-        branch: main
     - provider: NuGet
       server: https://www.nuget.org/api/v2/package
       api_key:
@@ -75,5 +73,3 @@ for:
       skip_symbols: false
       symbol_server: https://nuget.smbsrc.net/
       artifact: packages
-      on:
-        branch: main
