@@ -10,5 +10,6 @@
     <PackageTags>Base64;Base64Url;UTF8</PackageTags>
     <PackageProjectUrl>https://github.com/gabrielweyer/dotnet-decode-base64</PackageProjectUrl>
     <Copyright>Copyright © Decode Base64 contributors</Copyright>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
   </PropertyGroup>
 </Project>
