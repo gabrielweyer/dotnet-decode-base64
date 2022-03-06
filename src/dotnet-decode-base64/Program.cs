@@ -1,36 +1,33 @@
-﻿using System;
+﻿namespace DotNet.DecodeBase64;
 
-namespace DotNet.DecodeBase64
+class Program
 {
-    class Program
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
+        if (args.Length != 1)
         {
-            if (args.Length != 1)
-            {
-                Console.WriteLine("A single argument should be provided:");
-                Console.WriteLine("dotnet decode-base64 SGVsbG8gV29ybGQh");
-                return;
-            }
+            Console.WriteLine("A single argument should be provided:");
+            Console.WriteLine("dotnet decode-base64 SGVsbG8gV29ybGQh");
+            return;
+        }
 
-            try
-            {
-                var decodedString = Base64Decoder.Decode(args[0]);
+        try
+        {
+            var decodedString = Base64Decoder.Decode(args[0]);
 
-                Console.ForegroundColor = ConsoleColor.Green;
-                Console.WriteLine("Decoded string:");
-                Console.ResetColor();
-                Console.WriteLine(decodedString);
-            }
-            catch (FormatException e)
-            {
-                Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine(e.Message);
-            }
-            finally
-            {
-                Console.ResetColor();
-            }
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("Decoded string:");
+            Console.ResetColor();
+            Console.WriteLine(decodedString);
+        }
+        catch (FormatException e)
+        {
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine(e.Message);
+        }
+        finally
+        {
+            Console.ResetColor();
         }
     }
 }

@@ -2,6 +2,8 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFrameworks>netcoreapp3.1;net6.0</TargetFrameworks>
+    <LangVersion>latest</LangVersion>
+    <ImplicitUsings>enable</ImplicitUsings>
     <RootNamespace>DotNet.DecodeBase64</RootNamespace>
     <PackAsTool>true</PackAsTool>
     <PackageId>dotnet-decode-base64</PackageId>
@@ -12,4 +14,7 @@
     <Copyright>Copyright © Decode Base64 contributors</Copyright>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
   </PropertyGroup>
+  <ItemGroup>
+    <Using Include="System.Text" />
+  </ItemGroup>
 </Project>
