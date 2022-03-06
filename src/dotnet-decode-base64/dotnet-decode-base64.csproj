@@ -13,6 +13,7 @@
     <PackageDescription>Decode a UTF8 base64 encoded string. Supports both base64 and base64url.</PackageDescription>
     <PackageTags>Base64;Base64Url;UTF8</PackageTags>
     <PackageProjectUrl>https://github.com/gabrielweyer/dotnet-decode-base64</PackageProjectUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
     <Copyright>Copyright © Decode Base64 contributors</Copyright>
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
     <IncludeSymbols>true</IncludeSymbols>
@@ -26,5 +27,8 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="README.md" Pack="true" PackagePath="\"/>
   </ItemGroup>
 </Project>
