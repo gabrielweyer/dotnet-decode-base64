@@ -6,16 +6,13 @@ public class Base64DecoderTests
     public void GivenValidBase64String_WhenDecode_ThenReturnDecodedString()
     {
         // Arrange
-
         const string input = "SGVsbG8gV29ybGQh";
         const string expected = "Hello World!";
 
         // Act
-
         var actual = Base64Decoder.Decode(input);
 
         // Assert
-
         Assert.Equal(expected, actual);
     }
 
@@ -25,11 +22,9 @@ public class Base64DecoderTests
     public void GivenMinusAndUnderscore_WhenDecode_ThenReturnDecodedString(string input, string expected)
     {
         // Act
-
         var actual = Base64Decoder.Decode(input);
 
         // Assert
-
         Assert.Equal(expected, actual);
     }
 
@@ -39,11 +34,9 @@ public class Base64DecoderTests
     public void GivenRemovedPadding_WhenDecode_ThenReturnDecodedString(string input, string expected)
     {
         // Act
-
         var actual = Base64Decoder.Decode(input);
 
         // Assert
-
         Assert.Equal(expected, actual);
     }
 }
