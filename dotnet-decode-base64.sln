@@ -11,6 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{4EC166CF
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotnet-decode-base64-tests", "tests\dotnet-decode-base64-tests\dotnet-decode-base64-tests.csproj", "{5F5C4029-BADC-41C0-89FA-5D42FBECEE67}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "_build", "build\_build.csproj", "{A34C0D88-E9C0-48C5-91D2-C1B0D2D1D5B0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,6 +26,8 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A34C0D88-E9C0-48C5-91D2-C1B0D2D1D5B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A34C0D88-E9C0-48C5-91D2-C1B0D2D1D5B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{78F9E63A-7E22-44E7-8D50-2BCED9562E91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{78F9E63A-7E22-44E7-8D50-2BCED9562E91}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{78F9E63A-7E22-44E7-8D50-2BCED9562E91}.Debug|x64.ActiveCfg = Debug|Any CPU
