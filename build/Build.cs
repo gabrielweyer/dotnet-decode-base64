@@ -8,6 +8,7 @@ using Nuke.Common.ProjectModel;
 using Nuke.Common.Tooling;
 using Nuke.Common.Tools.DotNet;
 using Nuke.Common.Tools.GitVersion;
+using Nuke.Common.Tools.ReportGenerator;
 using Nuke.Common.Utilities.Collections;
 using static Nuke.Common.IO.FileSystemTasks;
 using static Nuke.Common.Tools.DotNet.DotNetTasks;
@@ -37,6 +38,7 @@ class Build : NukeBuild
     static AbsolutePath TestsDirectory => RootDirectory / "tests";
     static AbsolutePath ArtifactsDirectory => RootDirectory / "artifacts";
     static AbsolutePath TestResultsDirectory => ArtifactsDirectory / "test-results";
+    static AbsolutePath CodeCoverageDirectory => ArtifactsDirectory / "coverage-report";
     static AbsolutePath PackagesDirectory => ArtifactsDirectory / "packages";
 
 #pragma warning disable CA1822 // Can't make this static as it breaks NUKE
@@ -96,6 +98,7 @@ class Build : NukeBuild
 
             DotNetTest(s => s
                 .SetConfiguration(Configuration)
+                .SetDataCollector("XPlat Code Coverage")
                 .EnableNoBuild()
                 .CombineWith(testProjects, (ss, p) =>
                 {
@@ -110,8 +113,19 @@ class Build : NukeBuild
                 }), completeOnFailure: true);
         });
 
-    Target Pack => _ => _
+    Target Coverage => _ => _
         .DependsOn(Test)
+        .Executes(() =>
+        {
+            ReportGeneratorTasks.ReportGenerator(s => s
+                .SetFramework("net6.0")
+                .SetReports($"{TestResultsDirectory}/**/coverage.cobertura.xml")
+                .SetTargetDirectory(CodeCoverageDirectory)
+                .SetReportTypes(ReportTypes.Html));
+        });
+
+    Target Pack => _ => _
+        .DependsOn(Coverage)
         .OnlyWhenStatic(() => Package)
         .Executes(() =>
         {
