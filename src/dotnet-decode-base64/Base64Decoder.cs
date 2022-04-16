@@ -1,4 +1,4 @@
-﻿namespace DotNet.DecodeBase64;
+namespace DotNet.DecodeBase64;
 
 public static class Base64Decoder
 {

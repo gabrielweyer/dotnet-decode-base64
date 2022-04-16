@@ -1,8 +1,8 @@
-﻿namespace DotNet.DecodeBase64;
+namespace DotNet.DecodeBase64;
 
-class Program
+internal class Program
 {
-    static void Main(string[] args)
+    private static void Main(string[] args)
     {
         if (args.Length != 1)
         {
