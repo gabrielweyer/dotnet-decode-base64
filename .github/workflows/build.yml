@@ -41,7 +41,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: tests-results
-          path: ./artifacts/test-results/**/*.trx
+          path: ./artifacts/test-results/**/*.html
           if-no-files-found: error
         if: ${{ always() }}
       - name: Upload coverage report
