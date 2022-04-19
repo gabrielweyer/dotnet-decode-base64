@@ -1,33 +1,35 @@
 namespace DotNet.DecodeBase64;
 
-internal class Program
+internal static class Program
 {
-    private static void Main(string[] args)
+    internal const int SuccessExitCode = 0;
+    internal const int FailureExitCode = 1;
+
+    internal static IConsole AbstractedConsole;
+
+    internal static int Main(string[] args)
     {
+        AbstractedConsole ??= new NonThreadSafeConsole();
+
         if (args.Length != 1)
         {
-            Console.WriteLine("A single argument should be provided:");
-            Console.WriteLine("dotnet decode-base64 SGVsbG8gV29ybGQh");
-            return;
+            AbstractedConsole.WriteBoringLine("A single argument should be provided:");
+            AbstractedConsole.WriteBoringLine("dotnet decode-base64 SGVsbG8gV29ybGQh");
+            return FailureExitCode;
         }
 
         try
         {
             var decodedString = Base64Decoder.Decode(args[0]);
 
-            Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine("Decoded string:");
-            Console.ResetColor();
-            Console.WriteLine(decodedString);
+            AbstractedConsole.WriteFancyLine("Decoded string:");
+            AbstractedConsole.WriteBoringLine(decodedString);
+            return SuccessExitCode;
         }
         catch (FormatException e)
         {
-            Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine(e.Message);
-        }
-        finally
-        {
-            Console.ResetColor();
+            AbstractedConsole.WriteErrorLine(e.Message);
+            return FailureExitCode;
         }
     }
 }

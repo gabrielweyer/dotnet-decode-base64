@@ -22,6 +22,9 @@
     <NoWarn>CS7035</NoWarn>
   </PropertyGroup>
   <ItemGroup>
+    <InternalsVisibleTo Include="DotNet.DecodeBase64.Tests" />
+  </ItemGroup>
+  <ItemGroup>
     <Using Include="System.Text" />
   </ItemGroup>
   <ItemGroup>
@@ -31,6 +34,6 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="README.md" Pack="true" PackagePath="\"/>
+    <None Include="README.md" Pack="true" PackagePath="\" />
   </ItemGroup>
 </Project>
