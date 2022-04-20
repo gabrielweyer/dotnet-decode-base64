@@ -4,12 +4,16 @@
     <TargetFrameworks>netcoreapp3.1;net6.0</TargetFrameworks>
     <LangVersion>latest</LangVersion>
     <ImplicitUsings>enable</ImplicitUsings>
-    <RootNamespace>DotNet.DecodeBase64.Tests</RootNamespace>
+    <RootNamespace>Gabo.DotNet.DecodeBase64.Tests</RootNamespace>
+    <AssemblyName>Gabo.DotNet.DecodeBase64.Tests</AssemblyName>
     <IsPackable>false</IsPackable>
     <NoWarn>CS7035</NoWarn>
   </PropertyGroup>
-  
+
   <ItemGroup>
+    <Using Include="FluentAssertions" />
+    <Using Include="Gabo.DotNet.DecodeBase64" />
+    <Using Include="Gabo.DotNet.DecodeBase64.Tests.TestInfrastructure" />
     <Using Include="Xunit" />
   </ItemGroup>
 
@@ -18,6 +22,7 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
+    <PackageReference Include="FluentAssertions" Version="6.6.0" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.1.0" />
     <PackageReference Include="xunit" Version="2.4.1" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.4.3">

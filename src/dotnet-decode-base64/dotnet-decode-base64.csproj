@@ -6,7 +6,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <EmbedUntrackedSources>true</EmbedUntrackedSources>
     <ContinuousIntegrationBuild Condition="'$(GITHUB_ACTIONS)' == 'True'">true</ContinuousIntegrationBuild>
-    <RootNamespace>DotNet.DecodeBase64</RootNamespace>
+    <RootNamespace>Gabo.DotNet.DecodeBase64</RootNamespace>
     <PackAsTool>true</PackAsTool>
     <PackageId>dotnet-decode-base64</PackageId>
     <Authors>Gabriel Weyer</Authors>
@@ -22,6 +22,9 @@
     <NoWarn>CS7035</NoWarn>
   </PropertyGroup>
   <ItemGroup>
+    <InternalsVisibleTo Include="Gabo.DotNet.DecodeBase64.Tests" />
+  </ItemGroup>
+  <ItemGroup>
     <Using Include="System.Text" />
   </ItemGroup>
   <ItemGroup>
@@ -31,6 +34,6 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="README.md" Pack="true" PackagePath="\"/>
+    <None Include="README.md" Pack="true" PackagePath="\" />
   </ItemGroup>
 </Project>
