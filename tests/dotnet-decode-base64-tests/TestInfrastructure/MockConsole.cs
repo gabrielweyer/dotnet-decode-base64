@@ -1,4 +1,4 @@
-namespace DotNet.DecodeBase64.Tests.TestInfrastructure;
+namespace Gabo.DotNet.DecodeBase64.Tests.TestInfrastructure;
 
 internal class MockConsole : IConsole
 {

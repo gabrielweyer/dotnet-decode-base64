@@ -1,4 +1,4 @@
-namespace DotNet.DecodeBase64.Tests;
+namespace Gabo.DotNet.DecodeBase64.Tests;
 
 public class Base64DecoderTests
 {
@@ -13,7 +13,7 @@ public class Base64DecoderTests
         var actual = Base64Decoder.Decode(input);
 
         // Assert
-        Assert.Equal(expected, actual);
+        actual.Should().Be(expected);
     }
 
     [Theory]
@@ -25,7 +25,7 @@ public class Base64DecoderTests
         var actual = Base64Decoder.Decode(input);
 
         // Assert
-        Assert.Equal(expected, actual);
+        actual.Should().Be(expected);
     }
 
     [Theory]
@@ -37,6 +37,6 @@ public class Base64DecoderTests
         var actual = Base64Decoder.Decode(input);
 
         // Assert
-        Assert.Equal(expected, actual);
+        actual.Should().Be(expected);
     }
 }

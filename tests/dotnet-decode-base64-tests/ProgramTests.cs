@@ -1,7 +1,4 @@
-using DotNet.DecodeBase64.Tests.TestInfrastructure;
-using FluentAssertions;
-
-namespace DotNet.DecodeBase64.Tests;
+namespace Gabo.DotNet.DecodeBase64.Tests;
 
 public class ProgramTests
 {
