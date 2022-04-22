@@ -2,13 +2,13 @@
 
 `.NET` [global tool][dotnet-global-tools] to decode a `UTF8` `Base64` encoded string.
 
-| Package | Release |
-| - | - |
+| Package                | Release                                          |
+| ---------------------- | ------------------------------------------------ |
 | `dotnet-decode-base64` | [![NuGet][nuget-tool-badge]][nuget-tool-command] |
 
-| CI | Status | Platform(s) | Framework(s) |
-| --- | --- | --- | --- |
-| [GitHub][github-actions] | [![Build Status][github-actions-shield]][github-actions] | `Ubuntu` | `netcoreapp3.1`, `net6.0` |
+| CI                       | Status                                                   | Platform(s) | Framework(s)              |
+| ------------------------ | -------------------------------------------------------- | ----------- | ------------------------- |
+| [GitHub][github-actions] | [![Build Status][github-actions-shield]][github-actions] | `Ubuntu`    | `netcoreapp3.1`, `net6.0` |
 
 Supports both [base64][base64] and [base64url][base64url].
 
