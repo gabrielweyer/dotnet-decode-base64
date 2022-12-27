@@ -28,16 +28,16 @@ internal sealed class MockConsole : IConsole
     {
         _lines.Add(new ColoredLine(line, ErrorColor));
     }
-}
 
-internal sealed class ColoredLine
-{
-    public ColoredLine(string line, ConsoleColor color)
+    internal sealed class ColoredLine
     {
-        Line = line;
-        Color = color;
-    }
+        public ColoredLine(string line, ConsoleColor color)
+        {
+            Line = line;
+            Color = color;
+        }
 
-    public ConsoleColor Color { get; }
-    public string Line { get; }
+        public ConsoleColor Color { get; }
+        public string Line { get; }
+    }
 }

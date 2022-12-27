@@ -23,7 +23,7 @@ public class ProgramTests
         Program.Main(input);
 
         // Assert
-        var expectedLines = new List<ColoredLine>
+        var expectedLines = new List<MockConsole.ColoredLine>
         {
             new("A single argument should be provided:", MockConsole.BoringColor),
             new("dotnet decode-base64 SGVsbG8gV29ybGQh", MockConsole.BoringColor)
@@ -54,7 +54,7 @@ public class ProgramTests
         Program.Main(input);
 
         // Assert
-        var expectedLines = new List<ColoredLine>
+        var expectedLines = new List<MockConsole.ColoredLine>
         {
             new("A single argument should be provided:", MockConsole.BoringColor),
             new("dotnet decode-base64 SGVsbG8gV29ybGQh", MockConsole.BoringColor)
@@ -87,7 +87,7 @@ public class ProgramTests
         // Assert
         const string errorMessage =
             "The input is not a valid Base-64 string as it contains a non-base 64 character, more than two padding characters, or an illegal character among the padding characters.";
-        var expectedLines = new List<ColoredLine>
+        var expectedLines = new List<MockConsole.ColoredLine>
         {
             new(errorMessage, MockConsole.ErrorColor)
         };
@@ -117,7 +117,7 @@ public class ProgramTests
         Program.Main(input);
 
         // Assert
-        var expectedLines = new List<ColoredLine>
+        var expectedLines = new List<MockConsole.ColoredLine>
         {
             new("Decoded string:", MockConsole.FancyColor),
             new(DecodedValidBase64Input, MockConsole.BoringColor)
