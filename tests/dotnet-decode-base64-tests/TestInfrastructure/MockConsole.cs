@@ -1,6 +1,6 @@
 namespace Gabo.DotNet.DecodeBase64.Tests.TestInfrastructure;
 
-internal class MockConsole : IConsole
+internal sealed class MockConsole : IConsole
 {
     public const ConsoleColor FancyColor = ConsoleColor.Cyan;
     public const ConsoleColor BoringColor = ConsoleColor.Yellow;
@@ -30,7 +30,7 @@ internal class MockConsole : IConsole
     }
 }
 
-internal class ColoredLine
+internal sealed class ColoredLine
 {
     public ColoredLine(string line, ConsoleColor color)
     {

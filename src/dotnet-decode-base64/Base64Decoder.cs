@@ -1,6 +1,6 @@
 namespace Gabo.DotNet.DecodeBase64;
 
-public static class Base64Decoder
+internal static class Base64Decoder
 {
     public static string Decode(string value)
     {
