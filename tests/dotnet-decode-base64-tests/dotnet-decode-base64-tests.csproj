@@ -8,7 +8,7 @@
     <RootNamespace>Gabo.DotNet.DecodeBase64.Tests</RootNamespace>
     <AssemblyName>Gabo.DotNet.DecodeBase64.Tests</AssemblyName>
     <IsPackable>false</IsPackable>
-    <NoWarn>CS7035</NoWarn>
+    <NoWarn>CS7035;CA1707</NoWarn>
   </PropertyGroup>
 
   <ItemGroup>
