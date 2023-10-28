@@ -14,7 +14,7 @@
     <GlobalPackageReference Include="Meziantou.Analyzer" Version="2.0.102" />
     <GlobalPackageReference Include="AsyncFixer" Version="1.6.0" />
     <GlobalPackageReference Include="Microsoft.VisualStudio.Threading.Analyzers" Version="17.7.30" />
-    <PackageVersion Include="xunit.runner.visualstudio" Version="2.4.5" Condition="'$(TargetFramework)' == 'netcoreapp3.1'" />
+    <PackageVersion Include="xunit.runner.visualstudio" Version="2.5.3" Condition="'$(TargetFramework)' == 'netcoreapp3.1'" />
     <PackageVersion Include="xunit.runner.visualstudio" Version="2.5.3" Condition="'$(TargetFramework)' == 'net6.0'" />
   </ItemGroup>
   <PropertyGroup>
