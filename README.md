@@ -6,9 +6,9 @@
 | ---------------------- | ------------------------------------------------ |
 | `dotnet-decode-base64` | [![NuGet][nuget-tool-badge]][nuget-tool-command] |
 
-| CI                       | Status                                                   | Platform(s) | Framework(s)     |
-| ------------------------ | -------------------------------------------------------- | ----------- | ---------------- |
-| [GitHub][github-actions] | [![Build Status][github-actions-shield]][github-actions] | `Ubuntu`    | `net6.0, net8.0` |
+| CI                       | Status                                                   | Platform(s) | Framework(s) |
+| ------------------------ | -------------------------------------------------------- | ----------- | ------------ |
+| [GitHub][github-actions] | [![Build Status][github-actions-shield]][github-actions] | `Ubuntu`    | `net8.0`     |
 
 Supports both [base64][base64] and [base64url][base64url].
 
