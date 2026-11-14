@@ -36,11 +36,10 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v6
 
-    - name: Install .NET 8
+    - name: Setup .NET
       uses: actions/setup-dotnet@v5
       with:
-        dotnet-version: '8.0.x'
-        dotnet-quality: 'ga'
+        dotnet-version: 10.0.x
 
     - name: Initialize CodeQL
       uses: github/codeql-action/init@v4
