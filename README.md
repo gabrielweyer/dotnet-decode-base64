@@ -26,6 +26,10 @@ dotnet tool install -g dotnet-decode-base64
 dotnet decode-base64 SGVsbG8gV29ybGQh
 ```
 
+## Developing
+
+See [DEVELOPING.md](DEVELOPING.md) for how to build locally and how to release a new version.
+
 [github-actions]: https://github.com/gabrielweyer/dotnet-decode-base64/actions/workflows/build.yml
 [github-actions-shield]: https://github.com/gabrielweyer/dotnet-decode-base64/actions/workflows/build.yml/badge.svg
 [nuget-tool-badge]: https://img.shields.io/nuget/v/dotnet-decode-base64.svg?label=NuGet&style=flat-square
